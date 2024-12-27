@@ -8,73 +8,86 @@
   <style>
     body {
       font-family: 'Roboto', sans-serif;
-      background-color: #e9ecef;
+      background-color: #f8f9fa;
       color: #343a40;
       margin: 0;
       padding: 20px;
     }
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      background-color: #ffffff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
     h1 {
       background-color: #17a2b8;
       color: white;
-      padding: 10px;
+      padding: 15px;
       border-radius: 5px;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      text-align: center;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     }
     h2 {
-      margin-top: 20px;
+      margin-top: 30px;
       color: #17a2b8;
+      border-bottom: 2px solid #17a2b8;
+      padding-bottom: 5px;
     }
     ul {
-      list-style-type: disc;
-      padding-left: 20px;
+      list-style-type: none;
+      padding: 0;
+    }
+    li {
+      margin: 10px 0;
+      font-size: 1.1rem;
+      font-weight: bold;
     }
     .hobby-image {
       width: 100%;
       max-width: 400px;
       height: auto;
       margin: 10px 0;
-      border-radius: 5px;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-      transition: transform 0.2s;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s;
     }
     .hobby-image:hover {
       transform: scale(1.05);
     }
-    .container {
-      max-width: 800px;
-      margin: 0 auto;
-      background-color: white;
-      padding: 20px;
-      border-radius: 10px;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    @media (max-width: 768px) {
+      .hobby-image {
+        max-width: 100%;
+      }
     }
   </style>
 </head>
 <body>
   <div class="container">
-    <h1>My name is Maks and my student number is 564530. I have got many hobbies you know, but let me just write about a few that I enjoy the most.</h1>
+    <h1>Hi, I'm Maks (Student #564530)</h1>
+    <p>Welcome! I have many hobbies, but let me share the ones I enjoy the most.</p>
     
     <h2>Sports</h2>
     <ul>
       <li>Volleyball</li>
-      <img src="images/volleyball.jpg" alt="Volleyball" class="hobby-image">
+      <img src="images/volleyball.jpg" alt="Playing Volleyball" class="hobby-image">
       <li>Horseback Riding</li>
-      <img src="images/horsesonthesee.jpeg" alt="Horseback Riding" class="hobby-image">
-      <img src="images/justhorses.jpeg" alt="Horses" class="hobby-image">
+      <img src="images/horsesonthesee.jpeg" alt="Horseback Riding at the Beach" class="hobby-image">
+      <img src="images/justhorses.jpeg" alt="Beautiful Horses in the Field" class="hobby-image">
     </ul>
     
     <h2>Mental Activities</h2>
     <ul>
       <li>Checkers</li>
-      <img src="images/checkers.jpeg" alt="Checkers" class="hobby-image">
+      <img src="images/checkers.jpeg" alt="Playing Checkers" class="hobby-image">
       <li>Chess</li>
-      <img src="images/chess-playing-hand.webp" alt="Chess" class="hobby-image">
+      <img src="images/chess-playing-hand.webp" alt="Hand Moving a Chess Piece" class="hobby-image">
       <li>Sudoku</li>
-      <img src="images/sudoku.png" alt="Sudoku" class="hobby-image">
+      <img src="images/sudoku.png" alt="A Completed Sudoku Puzzle" class="hobby-image">
       <li>Puzzles</li>
-      <img src="images/puzzles.jpeg" alt="Puzzles" class="hobby-image">
+      <img src="images/puzzles.jpeg" alt="Solving a Puzzle" class="hobby-image">
     </ul>
   </div>
 </body>
 </html>
-
